@@ -1,0 +1,685 @@
+[ 2017-03-26T21:53:34+08:00 ] ::1 /lunblog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.077004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.078004s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:1.0411s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0760s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.4990s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.2300s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0010s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_article` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_article` INNER JOIN web_article_cate ON web_article_cate.cate_id = web_article.cate_id  ORDER BY a_id desc LIMIT 0,6   [ RunTime:0.0850s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.040002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.041002s ]
+NOTIC: [8] Undefined variable: v C:\wamp\www\lunblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 168 行.
+NOTIC: [8] Undefined variable: v C:\wamp\www\lunblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.363021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.363021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.098006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.098006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.180010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.181010s ]
+
+[ 2017-03-26T21:54:07+08:00 ] ::1 /lunblog/said.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_said` [ RunTime:0.0590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_said` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_said` WHERE ( s_view !=0 ) ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:54:53+08:00 ] ::1 /lunblog/Said/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_said` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_said` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_said` WHERE ( s_view !=0 ) ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.0640s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+NOTIC: [8] Undefined variable: data C:\wamp\www\lunblog\Application\Common\Common\function.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-26T21:57:42+08:00 ] ::1 /lunblog/Public/Admin/img/progress.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:57:58+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0000s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:05+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0070s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0000s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:17+08:00 ] ::1 /lunblog/Uploads/images/2015-11-24/565477562ca10.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:17+08:00 ] ::1 /lunblog/Uploads/images/2015-11-24/565477562ca10.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:17+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0060s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0000s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:19+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0030s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0010s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:25+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0350s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:26+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415962b0bb2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-26T21:58:26+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415916015ff.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-26T21:58:26+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415962b0bb2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:26+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:50+08:00 ] ::1 /lunblog/Uploads/images/2015-11-24/565477562ca10.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:50+08:00 ] ::1 /lunblog/Uploads/images/2015-11-24/565477562ca10.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-26T21:58:50+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T21:58:52+08:00 ] ::1 /lunblog/Uploads/images/2015-12-26/567e6a9e5f969.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:52+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415962b0bb2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-26T21:58:52+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415916015ff.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:53+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415962b0bb2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:53+08:00 ] ::1 /lunblog/Uploads/images/2015-11-10/56415916015ff.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:53+08:00 ] ::1 /lunblog/Uploads/images/2015-12-26/567e6a9e5f969.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T21:58:53+08:00 ] ::1 /lunblog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0060s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+ERR: 非法操作:Admin
+
+[ 2017-03-26T22:01:33+08:00 ] ::1 /lunblog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0030s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` INNER JOIN web_article_cate ON web_article_cate.cate_id = web_article.cate_id  ORDER BY a_id desc LIMIT 0,6   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v C:\wamp\www\lunblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 168 行.
+NOTIC: [8] Undefined variable: v C:\wamp\www\lunblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-26T22:17:46+08:00 ] ::1 /lunblog/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: code C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 63 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 65 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function ereg() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 67 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 69 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 71 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+NOTIC: [8192] Function eregi() is deprecated C:\wamp\www\lunblog\Application\Common\Common\function.php 第 73 行.
+SQL: SHOW COLUMNS FROM `web_article` [ RunTime:0.0040s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `web_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `web_carousel_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_article_cate`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `web_link` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `web_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `web_liuyan` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `web_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `a_id` FROM `web_article` WHERE ( a_views > 0 )  [ RunTime:0.0010s ]
+NOTIC: [2] array_rand(): Second argument has to be between 1 and the number of elements in the array C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 84 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 86 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 87 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\lunblog\Application\Home\Controller\BaseController.class.php 第 88 行.
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `web_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `web_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
